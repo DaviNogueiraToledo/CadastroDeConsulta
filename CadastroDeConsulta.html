@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consulta - CCWA Medicine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+          background-image: linear-gradient( to bottom, #c0fdd8,#c0fdd8, #ffffff);;
+        }
+
+        .cabecalho {
+           
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .casa ul {
+            list-style: none;
+            text-align: left;
+            margin-left: 80px;
+            margin-top: 50px;
+            
+        }
+        .casinha{
+            height: 04%;
+            width: 04%;
+        }
+        .casa ul a {
+            text-decoration: none;
+            list-style: none;
+            text-align: left;
+            margin-left: 80px;
+            margin-top: 50px;
+            
+        
+        }
+
+        .logo {
+            margin-top: -100px;
+            text-align: right;
+            margin-right: 170px;
+        }
+
+        .homenzinho {
+            text-align: center;
+        }
+
+        .tudoo {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+        .legais {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .botprosseguir {
+            background-color: #069e43;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .botprosseguir:hover {
+            background-color: #069e43;
+        }
+
+        .cadeistro {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="casa">
+            <ul>
+                <a href="../Início/Início.html">
+                    <img class="casinha" src="/Cadastro Consultas/ImagensCadastro/Casinha.jpg" />
+                </a>
+            </ul>
+            <div class="logo">
+                <img src="/Cadastro Consultas/ImagensCadastro/Logo.jpg">
+            </div><br><br><br>
+        </div><br><br>
+    
+
+  
+    </header>
+        <div class="homenzinho">
+            <h2>Agendamento de Consulta</h2>
+        </div><br><br><br>
+        
+        <!-- Formulário de agendamento de consulta -->
+        <form class="tudoo">
+            <label class="legais">Nome do Paciente:</label>
+            <input placeholder="Nome do paciente" type="text" id="nome">
+            
+            <label class="legais">Data da Consulta:</label>
+            <input type="date" id="dataConsulta">
+            
+            <label class="legais">Médico:</label>
+            <select name="medico" id="medico">
+                <option value="Dr. Silva">Dr. Silva</option>
+                <option value="Dra. Santos">Dra. Santos</option>
+                <option value="Dr. Souza">Dr. Souza</option>
+            </select>
+            
+            <label class="legais">Especialidade:</label>
+            <input placeholder="Especialidade médica" type="text" id="especialidade">
+            
+            <label class="legais">Observações:</label>
+            <textarea placeholder="Observações da consulta" id="observacoes"></textarea>
+            
+            <label class="legais">Prescrição Médica:</label>
+            <textarea placeholder="Prescrição médica" id="prescricao"></textarea>
+            
+            <label class="legais">Próxima Consulta:</label>
+            <input type="date" id="proximaConsulta">
+            
+            <label class = "legais">Plano de Saúde:</label>
+            <select name="planoSaude" id="planoSaude">
+                <option value="Plano A">Plano A</option>
+                <option value="Plano B">Plano B</option>
+                <option value="Plano C">Plano C</option>
+            </select>
+            
+            <label class="legais">Valor da Consulta:</label>
+            <input type="text" id="valorConsulta">
+            
+            <label class="legais">Forma de Pagamento:</label>
+            <select name="formaPagamento" id="formaPagamento">
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Cartão de Crédito">Cartão de Crédito</option>
+                <option value="Boleto Bancário">Boleto Bancário</option>
+            </select>
+
+            <button class="botprosseguir" onclick="AgendarConsulta()">Agendar Consulta</button>
+        </form><br>
+
+        <div class="cadeistro">
+            <h2>Já tem uma conta?</h2>
+            <a href="../Login/Login.html" style="text-decoration: none;">
+                <h3>Entre</h3>
+            </a>
+        </div><br><br><br><br>
+   
+    
+
+    <!-- Script para agendar consulta -->
+    <script>
+        function AgendarConsulta() {
+            // Aqui você pode adicionar a lógica para agendar a consulta
+            // Por exemplo, coletar os valores dos campos e enviá-los para o servidor
+            alert("Consulta agendada com sucesso!");
+        }
+    </script>
+</body>
+</html>
